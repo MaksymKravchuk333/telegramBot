@@ -1,0 +1,98 @@
+body {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+#map {
+    border: 2px solid #333;
+    position: relative;
+    max-width: 100%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+}
+
+/* Маркер */
+.marker {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #ff0000;
+    border: 2px solid #333;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+}
+
+/* Информационное сообщение */
+#message {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Всплывающая подсказка */
+.tooltip {
+    position: absolute;
+    padding: 5px 10px;
+    background-color: #222;
+    color: #f0f0f0;
+    font-size: 12px;
+    border-radius: 5px;
+    pointer-events: none;
+    opacity: 0.9;
+    border: 1px solid #444;
+}
+
+/* Кнопки управления точкой */
+.options {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: #222;
+    border: 1px solid #444;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.options button {
+    margin: 5px 0;
+    padding: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.options button:hover {
+    background-color: #45a049;
+}
+
+/* Декоративные узоры */
+body:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 20% 20%, #333, transparent),
+                radial-gradient(circle at 80% 80%, #444, transparent),
+                radial-gradient(circle at 30% 60%, #555, transparent);
+    opacity: 0.3;
+    z-index: -1;
+}
