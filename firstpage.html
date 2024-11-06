@@ -1,13 +1,29 @@
-<!doctype html>
-<html lang="ru">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Scatters</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mirage Map - CS:GO 2</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="container">
+        <h1>Mirage Map</h1>
 
+        <!-- Карта с возможностью добавления точек -->
+        <div class="map-container">
+            <img src="path/to/mirage.jpg" alt="Mirage Map" id="map">
+            <div id="points-container"></div>
+        </div>
+
+        <!-- Секция для списка добавленных точек -->
+        <div class="points-list">
+            <h2>Точки на карте</h2>
+            <ul id="points-list"></ul>
+        </div>
+    </div>
+
+    <!-- Скрипт для добавления точек на карту -->
+    <script src="script.js"></script>
 </body>
 </html>
